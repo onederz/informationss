@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onederz Information</title>
+    <link rel="icon" type="image/x-icon" href="Image\Title%20logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Onederz Information</title>
+        <link rel="icon" type="image/x-icon" href="Image\Title%20logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    </head>
+    <body>
+      <div id="header" class="container">
+            <div class="headerlogo">
+                <a href="index.html">
+                    <img src="Image\onederz-logo.jpg" alt="" class="logotopheader">
+                </a>
+            </div>
+        <div class="menu_icon_box">
+            <div class="line1" id="iconmenu"></div>
+            <div class="line2" id="iconmenu"></div>
+            <div class="line3" id="iconmenu"></div>
+        </div>
+        <div class="box">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="tour.html"><i class="fa-solid fa-person-walking"></i>Tour/Activity</a></li>
+                <li><a href="bus.html"><i class="fa-solid fa-bus"></i>Bus Tickets</a></li>
+                <li><a href="airportshuttle.html"><i class="fa-solid fa-plane-departure"></i>Airport Shuttle</a></li>
+                <li><a href="maps.html"><i class="fa-solid fa-map-location-dot"></i>Maps</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+<div  id="main">
+    <p class="destinationtitle">To Phnom Penh</p>
+    <img src="Image\to phnom penh.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Battambang</p>
+    <img src="Image\to battambang.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Preah Vihear</p>
+    <img src="Image\to preah vihear.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Ratanakiri</p>
+    <img src="Image\to ratanakiri.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Mondulkiri</p>
+    <img src="Image\to mondulkiri.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Kampot</p>
+    <img src="Image\to kampot.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Sihanoukville</p>
+    <img src="Image\to sihanoukville.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Koh Rong / Koh Rong Sanloem</p>
+    <img src="Image\to island.jpg" alt="go to phnom penh" class="buspic">
+    <p class="destinationtitle">To Bangkok</p>
+    <img src="Image\to bangkok.jpg" alt="go to phnom penh" class="buspic">
+    <div class="margin"></div>
+</div>
+<div id="footer">
+    <p class="bookingfooter">Booking at the reception</p>
+</div>
+</body>
+<script>
+    let menu_icon_box = document.querySelector(".menu_icon_box");
+    let box = document.querySelector(".box");
+    menu_icon_box.onclick = function(){
+        menu_icon_box.classList.toggle("active");
+        box.classList.toggle("active");
+    }
+
+    document.onclick = function(e){
+        if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
+            menu_icon_box.classList.remove("active");
+            box.classList.remove("active");
+        }
+    }
+</script>
+</html>

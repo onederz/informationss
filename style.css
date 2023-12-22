@@ -1,0 +1,325 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.box {
+    width: fit-content;
+    height: 100%;
+    background-color: #161616;
+    position: fixed;
+    text-align: left;
+    z-index: 1;
+    opacity: 0;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+.active.box {
+    opacity: 1;
+    left: 0px;
+    pointer-events: fill;
+}
+.menu_icon_box {
+    z-index: 2;
+    width: 115px;
+    background-color: #fff;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.line1 , .line2 , .line3 {
+    width: 100px;
+    height: 17px;
+    background-color: #000;
+    border-radius: 50px;
+    margin: 15px 80px;
+    transition: 0.4s;
+}
+.active .line1 {
+    transform: translate(0px , 32px)rotate(45deg);
+}
+.active .line2 {
+    opacity: 0;
+}
+.active .line3 {
+    transform: translate(0px , -32px)rotate(-45deg);
+}
+nav {
+    padding-top: 240px;
+}
+nav ul {
+    margin: 0px 30px;
+}
+nav ul li {
+    list-style: none;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+nav ul li:hover {
+    background-color: #bebcbc;
+    border-radius: 8px;
+}
+nav ul li a {
+    color: #fff;
+    font-size: 50px;
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+}
+.headerlogo {
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.headerlogo img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topmenuleft , .topmenuleft2 , .topmenuright , .topmenuright2 {
+    width: 380px;
+    border: solid black 5px;
+}
+.topmenuleft , .topmenuright  {
+    margin-top: 100px;
+}
+.topmenuright , .topmenuright2 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.topmenuleft2 , .topmenuright2 {
+    margin-top: 50px;
+}
+.topmenuleft , .topmenuleft2 {
+    margin-left: 50px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+#iconmenu {
+    margin-left: 5%;
+}
+.bookingfooter {
+    font-size: 50px;
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    color: #fff;
+}
+div {
+    display: block;
+}
+#header{
+    top: 0;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 2;
+}
+#footer {
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+}
+#main {
+    margin-top: 250px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1840px;
+    margin-bottom: 250px;
+}
+.airportshuttle {
+    width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buspic {
+    width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destinationtitle {
+    margin-top: 80px;
+    font-size: 50px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px;
+}
+.maps {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 70px;
+}
+.mapspic {
+    width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #000 5px;
+}
+.fa-solid {
+    margin-right: 30px;
+}
+.fa-person-walking {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+
+  .modal {
+    padding-bottom: auto;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 50%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+  }
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 100px;
+  }
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 150px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  .explain {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hello {
+    font-size: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .othertempletour {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .border1 {
+    border: solid black 5px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: #161616 0px 10px 15px;
+  }
+  .tourpic {
+    width: 920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #000 5px;
+  }
+  .border2 {
+    margin-top: 50px;
+    border: solid black 5px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: #161616 0px 10px 15px;
+  }
+  .tourheader {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  .tourheader2 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .margin {
+    padding-bottom: 100px;
+  }
